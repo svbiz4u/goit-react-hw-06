@@ -1,13 +1,13 @@
 import './App.css'
-import ContactForm from './Components/ContactForm/ContactForm';
-import SearchBox from './Components/SearchBox/SearchBox';
-import ContactList from './Components/ContactList/ContactList';
+import ContactForm from './components/ContactForm'
+import SearchBox from './components/SearchBox';
+import ContactList from './components/ContactList';
 
 function App() {
     
   return (
     <div>
-      <h1>Phonebook Hello</h1>
+      <h1>Phonebook</h1>
       <ContactForm />
       <SearchBox />
       <ContactList />
