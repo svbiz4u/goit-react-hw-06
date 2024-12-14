@@ -9,7 +9,7 @@ const initialState = {
     initialState,
     reducers: {
       setSearchTerm: (state, action) => {
-        state.name = action.payload;
+      state.name = action.payload;
       },
     },
   });

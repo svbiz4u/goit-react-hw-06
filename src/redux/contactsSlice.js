@@ -8,17 +8,16 @@ const initialState = {
     name: "contacts",
     initialState,
     reducers: {
-      addContact: (state, action) => {
+        addContact: (state, action) => {
         state.items.push(action.payload);
-      },
-      deleteContact: (state, action) => {
+        },
+        deleteContact: (state, action) => {
         state.items = state.items.filter(
-          (contact) => contact.id !== action.payload
+        (contact) => contact.id !== action.payload
         );
-      },
+        },
     },
   });
   
   export const { addContact, deleteContact } = contactsSlice.actions;
-  
   export default contactsSlice.reducer;
